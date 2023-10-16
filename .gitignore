@@ -1,0 +1,6 @@
+# Ignore virtual environment directories
+venv_flask/
+
+# Ignore Python __pycache__ directories
+__pycache__/
+
