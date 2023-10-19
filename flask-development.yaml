@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meme-flask-deployment
+spec:
+  replicas: 3  # Number of desired replicas (adjust as needed)
+  selector:
+    matchLabels:
+      app: meme-flask
+  template:
+    metadata:
+      labels:
+        app: meme-flask
+    spec:
+      containers:
+      - name: meme-flask
+        image: sshuen30/flask-app:latest  # Replace with your Docker image name and tag
+        ports:
+        - containerPort: 5001
