@@ -7,4 +7,7 @@ How to run flask project using docker-compose:
 - docker-compose down
 
 How to run flask project on Kubernetes:
+- Copy flask-development.yaml and flask-service into a kubernetes cluster (eg, Google Cloud)
+- kubectl -f flask-development.yaml
+- kubectl -f flask-service.yaml
 
