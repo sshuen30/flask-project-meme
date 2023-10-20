@@ -1,7 +1,9 @@
 ## The docker-compose.yaml creates two containers:
 - An "app" container serving the flask application on gunicorn server @ port 5001
 - A "nginx" container serving the nginx service @ port 8081
-- A nginx configuration (proxy pass directive) is used to route incoming requests to Nginx (port:8081) to the flask app named "app" running on port:5001. 
+- A nginx configuration (proxy pass directive) is used to route incoming requests to Nginx (port:8081) to the flask app named "app" running on port:5001.
+
+- <img width="475" alt="Screenshot 2023-10-19 221529" src="https://github.com/sshuen30/flask-project-db/assets/40738215/a9072d99-ea7e-446d-8d09-41a7a0c2eb86">
 
 ## How to run flask project using docker-compose:
 - Git clone repository
