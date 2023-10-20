@@ -12,7 +12,7 @@ gitclone https://github.com/sshuen30/flask-project.git
 
 - Start docker compose
 ``` bash
-docker-compose up -d or 
+docker-compose up -d
 ```
 - Start docker compose and scale 3 containers for app
 ``` bash
