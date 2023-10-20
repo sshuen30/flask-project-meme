@@ -27,11 +27,11 @@ docker-compose down
 - Copy flask-development.yaml and flask-service into a kubernetes cluster (eg, Google Cloud)
 - Start a deployment
 ``` bash
-kubectl -f flask-development.yaml
+kubectl apply -f flask-development.yaml
 ```
 - Start a load balancer service to route traffic to deployment - no need for nginx
 ``` bash
-kubectl -f flask-service.yaml 
+kubectl apply -f flask-service.yaml 
 ```
 - Get IP and port no. of service
 ``` bash
