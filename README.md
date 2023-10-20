@@ -6,10 +6,10 @@
 ## How to run flask project using docker-compose:
 ``` bash
 gitclone https://github.com/sshuen30/flask-project.git
+cd into flask-project
+docker-compose up -d or 
+docker-compose up -d --build --scale app=3 (To create 3 containers for app)
 ```
-- cd into flask-project
-- docker-compose up -d or 
-- docker-compose up -d --build --scale app=3 (To create 3 containers for app)
 - Browser: xxx.xxx.x.xx:8081
 - docker-compose down
 
