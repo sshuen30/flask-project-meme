@@ -6,17 +6,27 @@
 ## How to run flask project using docker-compose:
 ``` bash
 gitclone https://github.com/sshuen30/flask-project.git
+
 cd into flask-project
+
 docker-compose up -d or 
+
 docker-compose up -d --build --scale app=3 (To create 3 containers for app)
+
 docker-compose down
 ```
 - Browser: xxx.xxx.x.xx:8081
 
 How to run flask project on Kubernetes:
 - Copy flask-development.yaml and flask-service into a kubernetes cluster (eg, Google Cloud)
-- kubectl -f flask-development.yaml
-- kubectl -f flask-service.yaml (Create a load balancer service to route traffic to deployment - no need for nginx)
-- kubectl get svc meme-flask-service (Get IP and port no. of service)
-- kubectl scale deployment meme-flask-deployment --replicas=2 (scale deployment to 2 pods)
-- kubectl set image deployment/meme-flask-deployment meme-flask=sshuen30/flask-app:v1 (Change image)
+``` bash
+kubectl -f flask-development.yaml
+
+kubectl -f flask-service.yaml (Create a load balancer service to route traffic to deployment - no need for nginx)
+
+kubectl get svc meme-flask-service (Get IP and port no. of service)
+
+kubectl scale deployment meme-flask-deployment --replicas=2 (scale deployment to 2 pods)
+
+kubectl set image deployment/meme-flask-deployment meme-flask=sshuen30/flask-app:v1 (Change image)
+```
