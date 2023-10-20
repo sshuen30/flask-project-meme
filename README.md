@@ -17,7 +17,7 @@ docker-compose down
 ```
 - Browser: xxx.xxx.x.xx:8081
 
-How to run flask project on Kubernetes:
+## How to run flask project on Kubernetes:
 - Copy flask-development.yaml and flask-service into a kubernetes cluster (eg, Google Cloud)
 ``` bash
 kubectl -f flask-development.yaml
