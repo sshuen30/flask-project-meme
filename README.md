@@ -14,7 +14,9 @@ cd into flask-project
 - Start docker compose
 ``` bash
 docker-compose up -d or 
-
+```
+- Start docker compose and scale 3 containers for app
+``` bash
 docker-compose up -d --build --scale app=3 (To create 3 containers for app)
 ```
 - Stop docker compose
