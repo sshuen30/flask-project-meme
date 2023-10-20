@@ -8,9 +8,8 @@
 ``` bash
 gitclone https://github.com/sshuen30/flask-project.git
 ```
-``` bash
-cd into flask-project
-```
+- cd into flask-project
+
 - Start docker compose
 ``` bash
 docker-compose up -d or 
