@@ -17,3 +17,8 @@ spec:
         image: sshuen30/flask-app:latest  # Replace with your Docker image name and tag
         ports:
         - containerPort: 5001
+      tolerations:
+      - key: "node.kubernetes.io/unreachable"
+        operator: "Exists"
+        effect: "NoExecute"
+        tolerationSeconds: 30
