@@ -10,5 +10,5 @@ spec:
     - protocol: TCP
       port: 8088
       targetPort: 5001
-  type: LoadBalancer  # Use NodePort for simplicity (adjust based on your needs)
+  type: NodePort  # Use NodePort for simplicity (adjust based on your needs)
 
