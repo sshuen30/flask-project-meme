@@ -4,7 +4,7 @@ metadata:
   name: meme-flask-deployment
   namespace: meme
 spec:
-  replicas: 3  # Number of desired replicas (adjust as needed)
+  replicas: 4  # Number of desired replicas (adjust as needed)
   selector:
     matchLabels:
       app: meme-flask
