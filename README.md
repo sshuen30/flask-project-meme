@@ -40,7 +40,7 @@ kubectl get svc meme-flask-service
 ```
 - Scale deployment to 2 pods
 ``` bash
-kubectl scale deployment meme-flask-deployment --replicas=2 
+kubectl scale deployment meme-flask-deployment -n meme --replicas=2 
 ```
 - Change deployment image
 ``` bash
